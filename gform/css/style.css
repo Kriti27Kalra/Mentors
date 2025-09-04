@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&amp;family=Roboto&amp;display=swap");
+
+/* font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3edfd;
+}
+#form-section {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#form-section .form-box {
+  width: 100%;
+  max-width:700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: gray; */
+}
+#form-section .form-banner img {
+  width: 100%; 
+  border-radius: 10px;
+  margin: 20px 0px 10px 0px;
+}
+#form-section .head h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+#form-section .description {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: 1px solid #dadce0;
+  border-top: solid 14px rgb(66, 133, 244);
+}
+#form-section .year {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+#form-section .desc {
+  padding: 10px 0px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+#form-section .required {
+  padding: 5px 0px;
+  color: red;
+}
+#form-section .input-box {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: 1px solid #dadce0;
+}
+#form-section .input-box label {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  margin: 15px 0px 15px 0px !important;
+}
+#form-section .input-box label span {
+  color: red;
+}
+#form-section .input-box .custom-select,
+#form-section .input-box input {
+  border: none;
+  border-bottom: solid 2px #dadce0;
+  padding: 8px 0px !important;
+  border-radius: 0px !important;
+  margin-bottom: 35px;
+}
+#form-section .input-box .custom-select:focus,
+#form-section .input-box input:focus {
+  box-shadow: none;
+  outline: none;
+  border-bottom: solid 2px blue;
+}
+
+/* ==========Validation Css============= */
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-color: #dc3545 !important;
+}
+
+/* .form-control.is-invalid .input-box,
+.was-validated .form-control:invalid {
+  border: solid 1px #dc3545 !important;
+} */
+
+@media all and (max-width: 500px) {
+	
+  #form-section .form-box {
+  width: 100%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: gray; */
+}
+
+}
